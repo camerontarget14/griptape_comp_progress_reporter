@@ -1,4 +1,4 @@
-# Griptape Comp Progress Reporter
+# Griptape Comp Progress Reporter (WORK IN PROGRESS)
 
 A Quick WORK IN PROGRESS Griptape Nodes experiment that auto-generates shot progress reports from Nuke comps and publishes them to ShotGrid (Flow Production Tracking).
 
