@@ -8,9 +8,13 @@ A Quick WORK IN PROGRESS Griptape Nodes experiment that auto-generates shot prog
 
 When an artist runs the workflow from inside Nuke, a Python node parses the open `.nk` script as plain text — no Nuke dependency — and builds a compact digest of the shot: shot code, frame range, format, source plates, Write/output status, node operation histogram, and disabled/WIP counts. Serialized blobs (roto, tracker curves) are skipped so the summary stays small and signal-rich.
 
-That digest is passed to an Agent node running Claude, which writes a concise progress note in plain production language. The artist reviews and edits the text before anything is sent. The note is then published to ShotGrid as a Progress Report entity linked to the shot's comp Task.
+That digest is passed to an Agent node running Claude, which writes a concise progress note in plain production language. The artist reviews and edits the text before anything is sent.
 
 <img width="1513" height="820" alt="gt-nodes-agent" src="https://github.com/user-attachments/assets/e7587289-2359-4f55-ad7d-18491c549ffa" />
+
+The note is then published to ShotGrid as a Progress Report entity linked to the shot's comp Task.
+
+<img width="1682" height="760" alt="published_records" src="https://github.com/user-attachments/assets/b60dd8e3-854d-4a07-9d8b-aad148d9e2f7" />
 
 ## Files
 
