@@ -10,6 +10,8 @@ When an artist runs the workflow from inside Nuke, a Python node parses the open
 
 That digest is passed to an Agent node running Claude, which writes a concise progress note in plain production language. The artist reviews and edits the text before anything is sent. The note is then published to ShotGrid as a Progress Report entity linked to the shot's comp Task.
 
+<img width="1513" height="820" alt="gt-nodes-agent" src="https://github.com/user-attachments/assets/e7587289-2359-4f55-ad7d-18491c549ffa" />
+
 ## Files
 
 - `digest.py` — Griptape "Execute Python" node. Parses a `.nk` file and returns a structured dict (`digest`, `shot_code`, `node_count`, `write_path_set`, etc.)
